@@ -13,8 +13,19 @@ class Page2ViewController: UIViewController {
         super.viewDidLoad()
 
         print("Page2ViewController viewDidLoad()")
+        
+        let view1 = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        view1.backgroundColor = UIColor.red
+        self.view.addSubview(view1)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let view1 = UIView(frame: CGRect(x: 100, y: 200, width: 100, height: 100))
+        view1.backgroundColor = UIColor.yellow
+        self.view.addSubview(view1)
+    }
 
     /*
     // MARK: - Navigation
