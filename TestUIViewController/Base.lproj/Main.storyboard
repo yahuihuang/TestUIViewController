@@ -50,10 +50,30 @@
                     <view key="view" contentMode="scaleToFill" id="QGi-OR-fwG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BdN-ae-GXI">
+                                <rect key="frame" x="10" y="103" width="394" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vjO-2M-k4C"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="順"/>
+                                    <segment title="反"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="uzX-UA-pqH"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="BdN-ae-GXI" firstAttribute="leading" secondItem="uzX-UA-pqH" secondAttribute="leading" constant="10" id="QW5-Ic-wvA"/>
+                            <constraint firstItem="BdN-ae-GXI" firstAttribute="top" secondItem="uzX-UA-pqH" secondAttribute="top" constant="15" id="Z3x-WU-N8M"/>
+                            <constraint firstItem="uzX-UA-pqH" firstAttribute="trailing" secondItem="BdN-ae-GXI" secondAttribute="trailing" constant="10" id="gxI-4m-gEY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qaO-D5-Xvc"/>
+                    <connections>
+                        <outlet property="mySegment" destination="BdN-ae-GXI" id="Fyk-tm-sfp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAc-CW-PKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,7 @@ class Page2ViewController: UIViewController {
     var counter = 0.0
     var myTimer: Timer!
     
+    @IBOutlet weak var mySegment: UISegmentedControl!
     override func loadView() {
         super.loadView()
         
@@ -24,6 +25,9 @@ class Page2ViewController: UIViewController {
         let view1 = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
         view1.backgroundColor = UIColor.red
         view1.center = self.view.center
+        // 圓角
+        view1.layer.cornerRadius = 20
+        view1.clipsToBounds = true
         self.view.addSubview(view1)
         
         myTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { Timer in
@@ -34,7 +38,12 @@ class Page2ViewController: UIViewController {
     func setCounter(sender: UIView) {
         let angle = counter * Double.pi / 180.0
         sender.transform = CGAffineTransform(rotationAngle: angle)
-        counter += 5
+        if mySegment.selectedSegmentIndex == 0 {
+            counter += 5
+        } else  {
+            counter -= 5
+        }
+        
         print("Now counter is \(counter)")
     }
     
