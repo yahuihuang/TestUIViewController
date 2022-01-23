@@ -13,6 +13,7 @@
 		658D65EA279CEE0200EFD834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658D65E8279CEE0200EFD834 /* Main.storyboard */; };
 		658D65EC279CEE0600EFD834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658D65EB279CEE0600EFD834 /* Assets.xcassets */; };
 		658D65EF279CEE0600EFD834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658D65ED279CEE0600EFD834 /* LaunchScreen.storyboard */; };
+		658D65F7279CEF3500EFD834 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D65F6279CEF3500EFD834 /* Page2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		658D65EB279CEE0600EFD834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		658D65EE279CEE0600EFD834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		658D65F0279CEE0600EFD834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658D65F6279CEF3500EFD834 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				658D65E2279CEE0200EFD834 /* AppDelegate.swift */,
 				658D65E4279CEE0200EFD834 /* SceneDelegate.swift */,
 				658D65E6279CEE0200EFD834 /* ViewController.swift */,
+				658D65F6279CEF3500EFD834 /* Page2ViewController.swift */,
 				658D65E8279CEE0200EFD834 /* Main.storyboard */,
 				658D65EB279CEE0600EFD834 /* Assets.xcassets */,
 				658D65ED279CEE0600EFD834 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				658D65E7279CEE0200EFD834 /* ViewController.swift in Sources */,
 				658D65E3279CEE0200EFD834 /* AppDelegate.swift in Sources */,
+				658D65F7279CEF3500EFD834 /* Page2ViewController.swift in Sources */,
 				658D65E5279CEE0200EFD834 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
