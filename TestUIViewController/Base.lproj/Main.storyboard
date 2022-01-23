@@ -52,22 +52,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BdN-ae-GXI">
-                                <rect key="frame" x="10" y="103" width="394" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="vjO-2M-k4C"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="103" width="394" height="32"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="順"/>
                                     <segment title="反"/>
                                 </segments>
                             </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-QE-1jM">
+                                <rect key="frame" x="18" y="144" width="378" height="31"/>
+                                <connections>
+                                    <action selector="changSlider:" destination="aFh-LX-jfu" eventType="valueChanged" id="apy-S6-LAh"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uzX-UA-pqH"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="BdN-ae-GXI" firstAttribute="leading" secondItem="uzX-UA-pqH" secondAttribute="leading" constant="10" id="QW5-Ic-wvA"/>
+                            <constraint firstItem="DOE-QE-1jM" firstAttribute="top" secondItem="BdN-ae-GXI" secondAttribute="bottom" constant="10" id="BK2-Po-9A3"/>
+                            <constraint firstItem="DOE-QE-1jM" firstAttribute="leading" secondItem="uzX-UA-pqH" secondAttribute="leading" constant="20" id="Ber-Ce-jQT"/>
+                            <constraint firstItem="BdN-ae-GXI" firstAttribute="top" secondItem="uzX-UA-pqH" secondAttribute="top" constant="15" id="FSN-pc-GFK"/>
+                            <constraint firstItem="uzX-UA-pqH" firstAttribute="trailing" secondItem="DOE-QE-1jM" secondAttribute="trailing" constant="20" id="W6L-uB-1SD"/>
+                            <constraint firstItem="BdN-ae-GXI" firstAttribute="leading" secondItem="uzX-UA-pqH" secondAttribute="leading" constant="10" id="Whf-AG-aFA"/>
                             <constraint firstItem="BdN-ae-GXI" firstAttribute="top" secondItem="uzX-UA-pqH" secondAttribute="top" constant="15" id="Z3x-WU-N8M"/>
-                            <constraint firstItem="uzX-UA-pqH" firstAttribute="trailing" secondItem="BdN-ae-GXI" secondAttribute="trailing" constant="10" id="gxI-4m-gEY"/>
+                            <constraint firstItem="uzX-UA-pqH" firstAttribute="trailing" secondItem="BdN-ae-GXI" secondAttribute="trailing" constant="10" id="sxS-45-wVL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qaO-D5-Xvc"/>

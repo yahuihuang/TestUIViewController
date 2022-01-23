@@ -9,6 +9,7 @@ import UIKit
 
 class Page2ViewController: UIViewController {
     var counter = 0.0
+    var offset = 5.0
     var myTimer: Timer!
     
     @IBOutlet weak var mySegment: UISegmentedControl!
@@ -39,17 +40,23 @@ class Page2ViewController: UIViewController {
         let angle = counter * Double.pi / 180.0
         sender.transform = CGAffineTransform(rotationAngle: angle)
         if mySegment.selectedSegmentIndex == 0 {
-            counter += 5
+            counter += offset
         } else  {
-            counter -= 5
+            counter -= offset
         }
         
-        print("Now counter is \(counter)")
+//        print("Now counter is \(counter)")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("in viewWillDisappear()")
         myTimer.invalidate()
+        myTimer = nil
+    }
+    
+    @IBAction func changSlider(_ sender: UISlider) {
+        print("sender's value \(sender.value)")
+        offset = Double(sender.value)
     }
 }
